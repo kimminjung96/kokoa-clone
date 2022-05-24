@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>firends</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen_header">
+      <h1 class="screen_header_title">Friends</h1>
+      <div class="screen_header_icon">
+        <span><i class="fas fa-thin fa-magnifying-glass fa-lg"></i></span>
+        <span><i class="fas fa-thin fa-music fa-lg"></i></span>
+        <span><i class="fas fa-thin fa-gear fa-lg"></i></span>
+      </div>
+    </header>
+
+    <a id="friends_display_link">
+      <i class="fa-solid fa-circle-info fa-sm"></i>
+      Friends' Names Display
+      <i class="fa-solid fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="friends-screen">
+      <div class="user_component">
+        <div class="user_component_column">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="usesr_img"
+            class="user_component_avatar user_component_avatar--xl"
+          />
+          <div class="user_component_text">
+            <h4 class="user_component_title">MinJung</h4>
+            <!-- <h6 class="user_component_subtitle">tyis text whatever</h6> -->
+          </div>
+        </div>
+        <div class="user_component_column"></div>
+      </div>
+      <div class="friends_screen_channel">
+        <div class="friends_screen_channel_header">
+          <span>Channel</span>
+          <i class="fa-solid fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user_component">
+          <div class="user_component_column">
+            <img
+              src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTExMDNfNDkg%2FMDAxNjM1OTQzODIxODQw.FXi6VebBIEJEKUXqldvnK3Un3SVA8SGBa2DF19Hdh8Yg.b3KOfp5BcpM8TLZFNeZDomhY1HUiV1U47brxJVFmIcsg.JPEG.jh_0412%2FIMG_8403.jpg&type=a340"
+              alt="usesr_img"
+              class="user_component_avatar user_component_avatar--sm"
+            />
+            <div class="user_component_text">
+              <h4 class="user_component_title user_component_title--not-bold">
+                Channel
+              </h4>
+              <h6 class="user_component_subtitle">Happy</h6>
+            </div>
+          </div>
+          <div class="user_component_column">
+            <div>
+              <span>2</span>
+              <i class="fa-solid fa-chevron-right fa-xs"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav_list">
+        <li class="nav_btn">
+          <a class="nav_link" href="friends.html">
+            <i class="fa-solid fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav_btn">
+          <a class="nav_link" href="chats.html">
+            <span class="nav_notification badge">1</span>
+            <i class="far fa-light fa-comment fa-2x"> </i>
+          </a>
+        </li>
+        <li class="nav_btn">
+          <a class="nav_link" href="find.html">
+            <i class="fas fa-thin fa-magnifying-glass fa-2x"> </i>
+          </a>
+        </li>
+        <li class="nav_btn">
+          <a class="nav_link" href="more.html">
+            <i class="fas fa-light fa-ellipsis fa-2x"> </i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="splash-screen">
+      <i class="fa-solid fa-comment"></i>
+    </div>
+
+    <div id="no-mobile">
+      <span>Your screen is too big</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/38a1fd8edf.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

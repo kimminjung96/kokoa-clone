@@ -1,0 +1,47 @@
+.nav {
+  background-color: #f9f9f9;
+  padding: 20px 50px;
+  border-top: 1px solid rgba(121, 121, 121, 0.2);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav_link {
+  color: #2e363e;
+  text-decoration: none;
+  position: relative;
+}
+.nav_notification {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+.nav_btn {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: appearBtnAnimation 0.3s ease-in-out forwards;
+}
+.nav_btn:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.nav_btn:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.nav_btn:nth-child(4) {
+  animation-delay: 0.8s;
+}
